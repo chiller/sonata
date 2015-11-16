@@ -19,11 +19,11 @@ We will be going through the 99 haskell problems https://wiki.haskell.org/H-99:_
 
 We will see that using a handful of functions we will be able to solve many exercises and define higher order functions like concat, map, reduce, filter, compose.
 
-The naming convention taken from haskell will be x, y, z.. for simple types and xs, ys, zs.. for lists xss... for nested lists.
+The naming convention taken from haskell will be x, y, z.. for simple types(like numbers) and xs, ys, zs.. for lists xss... for nested lists.
 
 ### The framework
 
-The framework exists as a boundary, inside which live the functions that have javascript specific functionality, these are very little in number. They aim to be an *abstraction*, we don't need to worry about how they are implemented, but it can be helpful to take a look at the implementation.
+The framework exists as a boundary, inside which live the functions that have javascript specific functionality, these are only a few. They aim to be an *abstraction*, we don't need to worry about how they are implemented, but it can be helpful to take a look at the implementation. Even the linked list implementation is hidden, there is no need to worry about the head attribute or the internals of the linked list.
 
 - `cons(x, xs)` prepends of _cons_es x to the beginning of list xs
 - `head(xs)` returns the head or first element of a list
@@ -42,4 +42,10 @@ tertiary conditional expression `cond ? expr1 : expr2`
 simple javascript operators == > < >= && ||
 shorthand function definition a = (xs) => x * 2
 
-TBC
+`git clone git@github.com:chiller/sonata.git`
+
+`npm install`
+
+`babel src --out-dir lib`
+
+`node lib/e0.js`
