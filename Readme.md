@@ -36,6 +36,10 @@ Convenience functions
 - `list(x, y, z, ...)` is an easy way to create a list
 - `show(xs)` logs a list to the console in a prettier way
 
-### Setting up
+### Recommended Javascript syntax to use
+
+tertiary conditional expression `cond ? expr1 : expr2`
+simple javascript operators == > < >= && ||
+shorthand function definition a = (xs) => x * 2
 
 TBC
