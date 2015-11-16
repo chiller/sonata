@@ -64,3 +64,6 @@ shorthand function definition `a = (xs) => x * 2`
 
 `node e0.js`
 
+###Useful
+
+`nodemon --watch src --exec "npm run build" -es6s`
