@@ -46,10 +46,21 @@ shorthand function definition `a = (xs) => x * 2`
 
 
 ##Setting Up
+
+###For Es6
 `git clone git@github.com:chiller/sonata.git`
+
+`cd sonata`
 
 `npm install`
 
 `babel src --out-dir lib`
 
 `node lib/e0.js`
+
+###If you only want to use javascript
+
+`cd sonata/compat`
+
+`node e0.js`
+
