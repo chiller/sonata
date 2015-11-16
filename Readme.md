@@ -42,7 +42,7 @@ tertiary conditional expression `cond ? expr1 : expr2`
 
 simple javascript operators `== > < >= && ||`
 
-shorthand function definition `a = (xs) => x * 2`
+shorthand function definition `var a = (xs) => x * 2`
 
 
 ##Setting Up
