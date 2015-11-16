@@ -39,8 +39,11 @@ Convenience functions
 ## Recommended Javascript syntax to use
 
 tertiary conditional expression `cond ? expr1 : expr2`
-simple javascript operators == > < >= && ||
-shorthand function definition a = (xs) => x * 2
+
+simple javascript operators `== > < >= && ||`
+
+shorthand function definition `a = (xs) => x * 2`
+
 
 ##Setting Up
 `git clone git@github.com:chiller/sonata.git`
