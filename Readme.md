@@ -54,7 +54,7 @@ shorthand function definition `a = (xs) => x * 2`
 
 `npm install`
 
-`babel src --out-dir lib`
+`npm run build`
 
 `node lib/e0.js`
 
