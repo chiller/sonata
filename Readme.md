@@ -35,6 +35,15 @@ Convenience functions
 
 - `list(x, y, z, ...)` is an easy way to create a list
 - `show(xs)` logs a list to the console in a prettier way
+- `equals(xs, ys)` true if the flat list xs has the same content as flat list ys
+- `reverse(xs)` returns a reversed copy of list xs
+
+###Higher Order Functions
+
+- `map(fn, xs)` returns a new list with function fn applied to every element of xs
+- `filter(fn, xs)` returns a new list with the elements of xs for which fn applied was truthy
+- `foldl(fn, acc, xs)` folds over list xs from the left using function fn and the initial value acc. fn takes the list element first and then the accumulator
+
 
 ## Recommended Javascript syntax to use
 
@@ -67,3 +76,6 @@ shorthand function definition `var a = (xs) => x * 2`
 ###Useful
 
 `nodemon --watch src --exec "npm run build" -es6s`
+
+
+
