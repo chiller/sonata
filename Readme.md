@@ -11,7 +11,7 @@ Summary of a linked list(we will call it list for short)
 - it has a _tail_ which is the remainder of the list(is also a linked list)
 - it can be Empty
 - it can contain anything, even other lists
-- instead of appending do a list we are prepending, known as _cons_
+- instead of appending to a list we are prepending, known as _cons_
 
 ### Goal of the dojo
 
