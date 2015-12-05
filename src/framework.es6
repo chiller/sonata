@@ -36,4 +36,4 @@ export let filter = (fn, xs) => isEmpty(xs) ? xs :
     cons(head(xs), filter(fn, tail(xs))) :
     filter(fn, tail(xs))
 
-export let reverse = xs => fold(cons, list(), xs)
+export let reverse = xs => foldl(cons, list(), xs)
