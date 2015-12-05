@@ -8,14 +8,13 @@ import {
     list, cons, head, tail, isEmpty, show
 } from "../lib/framework.js";
 
-import {elementAt} from "../lib/e3.js";
+import {reverse} from "../lib/e5.js";
 
-describe('#3 Kth element of a list', () => {
+describe('#5 Reverse a list', () => {
   let xs = list(1,2,3,4)
   it('', () => {
-      elementAt(0, xs).should.equal(1)
-      elementAt(2, xs).should.equal(3)
-      elementAt(3, xs).should.equal(4)
+      reverse(list()).should.deep.equal(list())
+      reverse(xs).should.deep.equal(list(4,3,2,1))
   });
 });
 

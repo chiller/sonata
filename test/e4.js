@@ -8,14 +8,14 @@ import {
     list, cons, head, tail, isEmpty, show
 } from "../lib/framework.js";
 
-import {elementAt} from "../lib/e3.js";
+import {count} from "../lib/e4.js";
 
-describe('#3 Kth element of a list', () => {
+describe('#4 Number of elements in a list ', () => {
   let xs = list(1,2,3,4)
   it('', () => {
-      elementAt(0, xs).should.equal(1)
-      elementAt(2, xs).should.equal(3)
-      elementAt(3, xs).should.equal(4)
+      count(list()).should.equal(0)
+      count(list(1,2)).should.equal(2)
+      count(xs).should.equal(4)
   });
 });
 

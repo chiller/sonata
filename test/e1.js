@@ -8,15 +8,10 @@ import {
     list, cons, head, tail, isEmpty, show
 } from "../lib/framework.js";
 
-import {
-    last
-} from "../lib/e1.js";
+import {last} from "../lib/e1.js";
 
-describe('#1 Last element of list', () => {
-  describe('1,2,3,4', () => {
-    let xs = list(1,2,3,4)
-
-    it('4', () => last(xs).should.equal(4))
-  });
-
+describe('#1 Last element of 1,2,3,4', () => {
+  let xs = list(1,2,3,4)
+  it('is 4', () => last(xs).should.equal(4) );
 });
+

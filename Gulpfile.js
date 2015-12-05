@@ -30,6 +30,7 @@ gulp.task('watch', function () {
     run_default = function () {
         gulp.start('default');
     }
+    run_default()
     watch('src/*.es6', run_default);
     watch('test/*.js', run_default);
 });
