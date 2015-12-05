@@ -15,7 +15,8 @@ Summary of a linked list(we will call it list for short)
 
 ### Goal of the dojo
 
-We will be going through the 99 haskell problems https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
+We will be going through the 99 haskell problems https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems 
+(which is originated from the 99 lisp problems http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
 
 We will see that using a handful of functions we will be able to solve many exercises and define higher order functions like concat, map, reduce, filter, compose.
 
