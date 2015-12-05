@@ -6,16 +6,13 @@ chai.should();
 
 import {
     list, cons, head, tail, isEmpty, show,
-    listFromArray, listToArray
+    listFromArray, listToArray,
+    filter, map, foldl
 } from "../lib/framework.js";
 
 describe('Framework', () => {
   describe('list basics', () => {
-    let xs;
-    beforeEach(() => {
-      // Create a new Rectangle object before every test.
-      xs = list(1,2,3,4)
-    });
+    let xs = list(1,2,3,4)
 
     it('head', () => head(xs).should.equal(1) );
     it('tail', () => tail(tail(xs)).should.deep.equal(
@@ -45,5 +42,32 @@ describe('Framework', () => {
               [1,[2,[3]]]
           )
       });
+  })
+
+  describe('higher order functions', () => {
+    let xs = list(1,2,3,4);
+
+    it('map', () => {
+        let plus1 = x => x + 1;
+        let double = x => x * 2;
+        let wrap = x => list(x);
+        map(plus1, xs).should.deep.equal(list(2,3,4,5))
+        map(double, xs).should.deep.equal(list(2,4,6,8))
+        listToArray(map(wrap, xs)).should.deep.equal(
+            [[1],[2],[3],[4]])
+    })
+    it('filter', () => {
+        let id = x => x
+        let gt3 = x => x > 3
+        filter(id, xs).should.deep.equal(xs)
+        filter(gt3, xs).should.deep.equal(list(4))
+    })
+
+    it('fold', () => {
+        foldl(cons,list(),list(3,2,1)
+        ).should.deep.equal(list(1,2,3))
+        let plus = (x,y) => x + y
+        foldl(plus,0,list(1,2,3)).should.equal(6)
+    })
   })
 });
