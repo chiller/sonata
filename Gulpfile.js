@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var mocha = require('gulp-mocha');
 var watch = require('gulp-watch');
-var shell = require('gulp-shell')
 var babel = require('gulp-babel');
 require('babel-core/register');
 
