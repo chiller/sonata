@@ -1,5 +1,5 @@
-"use strict"
 
+"use strict"
 let chai = require('chai'),
   path = require('path');
 
@@ -9,15 +9,13 @@ import {
     list, cons, head, tail, isEmpty, show
 } from "../lib/framework.js";
 
-import {
-    lastButOne
-} from "../lib/e2.js";
+import {lastButOne} from "../lib/e2.js";
 
-describe('#1 Last element of list', () => {
-  describe('1,2,3,4', () => {
+describe('Problems', () => {
+  describe('#2 Last but one element of 1,2,3,4', () => {
     let xs = list(1,2,3,4)
-
-    it('3', () => lastButOne(xs).should.equal(4))
+    it('is 3', () => lastButOne(xs).should.equal(3) );
   });
+
 
 });
