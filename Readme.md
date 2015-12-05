@@ -63,6 +63,8 @@ shorthand function definition `var a = (xs) => x * 2`
 
 `npm install`
 
+`npm install -g gulp`
+
 To build and run manually
 
 `gulp es6`
