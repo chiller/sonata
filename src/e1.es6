@@ -5,6 +5,7 @@ import {list, cons, head, tail, isEmpty, show} from "./framework.js";
  * For example: last(list(1,2,3,4)) -> 4
  */
 
+export let last = xs => undefined
 
 
 

@@ -1,3 +1,4 @@
+"use strict"
 let chai = require('chai'),
   path = require('path');
 
@@ -15,7 +16,7 @@ describe('#1 Last element of list', () => {
   describe('1,2,3,4', () => {
     let xs = list(1,2,3,4)
 
-    it('4', () => last(xs).should.be(4))
+    it('4', () => last(xs).should.equal(4))
   });
 
 });

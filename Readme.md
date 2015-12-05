@@ -63,9 +63,19 @@ shorthand function definition `var a = (xs) => x * 2`
 
 `npm install`
 
-`npm run build`
+To build and run manually
+
+`gulp es6`
 
 `node lib/e0.js`
+
+To run tests once built
+
+`gulp test`
+
+To build and run test with watching on change
+
+`gulp watch`
 
 ###If you only want to use javascript
 
@@ -73,9 +83,7 @@ shorthand function definition `var a = (xs) => x * 2`
 
 `node e0.js`
 
-###Useful
 
-`nodemon --watch src --exec "npm run build" -es6s`
 
 
 

@@ -1,4 +1,4 @@
-
+"use strict"
 let chai = require('chai'),
   path = require('path');
 
