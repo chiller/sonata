@@ -21,9 +21,9 @@ export let equals = (xs, ys) => isEmpty(xs) ? isEmpty(ys) :
 
 /*                       Higher Order Functions                               */
 
-export let fold = (fn, acc, xs) => isEmpty(xs) ?
+export let foldl = (fn, acc, xs) => isEmpty(xs) ?
     acc :
-    fold(fn, fn(head(xs), acc), tail(xs))
+    foldl(fn, fn(head(xs), acc), tail(xs))
 
 
 export let map = (fn, xs) => isEmpty(xs) ? xs : cons(
