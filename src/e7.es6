@@ -8,3 +8,4 @@ import {list, cons, head, tail, isEmpty, show, equals, reverse} from "./framewor
 
 
 
+export let flatten = (xs) => {throw new Error("Implement me!");}
