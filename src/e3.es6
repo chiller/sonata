@@ -4,6 +4,8 @@ import {list, cons, head, tail, isEmpty, show} from "./framework.js";
  * For example: elementAt(2, list(1,2,3,4,5)) -> 3
  */
 
+export let elementAt = (k, xs) => {throw new Error("Implement me!");}
+
 
 
 
