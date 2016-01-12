@@ -6,4 +6,7 @@ import {list, cons, head, tail, isEmpty, show, foldl} from "./framework.js";
  * to concatenate two lists
  */
 
-export let reverse = xs => {throw new Error("Implement me!");}
+export let concat = (xs, ys) => isEmpty(xs) ? ys : cons(head(xs), concat(tail(xs), ys))
+export let reverse = xs => isEmpty(xs) ? xs : concat(reverse(tail(xs)), list(head(xs)))
+
+// export let reverse = xs => foldl(cons,list(),xs)

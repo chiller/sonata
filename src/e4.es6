@@ -5,7 +5,7 @@ import {list, cons, head, tail, isEmpty, show} from "./framework.js";
  */
 
 
-export let count = xs => {throw new Error("Implement me!");}
+export let count = xs => isEmpty(xs) ? 0 : 1 + count(tail(xs))
 
 
 

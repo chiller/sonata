@@ -6,4 +6,4 @@ import {list, cons, head, tail, isEmpty, show} from "./framework.js";
  * For example: butLast(list(1,2,3,4,5)) -> 4
  */
 
-export let lastButOne = xs => {throw new Error("Implement me!");}
+export let lastButOne = xs => isEmpty(tail(tail(xs))) ? head(xs) : lastButOne(tail(xs))
